@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .headout {
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            background-color: blueviolet;
+        }
+
+        .logo {
+            width: 20%;
+        }
+
+        .nav {
+            width: 60%;
+        }
+
+        .nav a {
+            color: white;
+            font-size: 22px;
+        }
+
+        .nav li {
+            list-style: none;
+        }
+
+        .s1out {
+            width: 100%;
+            height: 550px;
+            background-color: aqua;
+            justify-content: center;
+        }
+        .s1out h1{
+            text-shadow: 2px 2px 0px yellow;
+        }
+
+        .cen {
+            width: 30%;
+            background-color: #a52a2a57;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .s2out {
+            background-image: url("gym-hero-img.png");
+            background-attachment: fixed;
+        }
+
+        .s3out {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .s3top {
+            width: 100%;
+            text-align: center;
+            background-color: burlywood;
+        }
+
+        .box {
+            width: 22%;
+            background-color: #9ece27b2;
+            text-align: center;
+            padding: 20px 10px;
+            border-radius: 12px;
+        }
+
+        .gotop {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            margin-right: 20px;
+        }
+
+        .box img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .services{
+            padding: 50px 10px;
+            position: relative;
+        }
+        :link{
+            text-decoration: none;
+        }
+        .service-lists{
+            position: absolute;
+            background-color: blueviolet;
+            top: 100px;
+            padding: 10px 15px;
+            margin-left: -50px;
+            width: 200px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            display: none;
+        }
+        .service-lists li{
+            margin-top: 10px;
+        }
+        .services:hover .service-lists{
+            display: block;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headout flexbox">
+            <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="">
+            </div>
+            <div class="nav flexbox">
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <div class="services">
+                    <li><a href="">Services</a></li>
+                    <div class="service-lists">
+                        <li><a href="">Bookkeeping</a></li>
+                        <li><a href=""> Business</a></li>
+                        <li><a href="">Property management</a></li>
+                        <li><a href=""> Event management</a></li>
+                    </div>
+                </div>
+
+                <li><a href="">Gallary</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="gotop">
+        <a href="">
+            <i class="bi bi-arrow-up-circle-fill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg>
+            </i>
+        </a>
+    </div>
+    <section>
+        <div class="s1out flexbox">
+            <div class="cen">
+                <h1>Welcome To Abc....</h1>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="s1out flexbox s2out">
+            <div class="cen position">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate iusto laboriosam, ipsum nisi modi
+                    sint numquam expedita suscipit corrupti nemo doloremque recusandae, officia voluptatibus ab possimus
+                    ipsa temporibus! Suscipit, a.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="s1out flexbox s3out">
+            <div class="s3top">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="box">
+                <img src="https://imagevars.gulfnews.com/2022/03/23/Bhagat-Singh-_17fb5e39284_medium.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia et iusto, earum eveniet debitis
+                    recusandae odio officiis quos ipsum iste! Vel eaque consequuntur iure vero quisquam fugit, voluptate
+                    voluptatum beatae.</p>
+            </div>
+            <div class="box">
+                <img src="https://imagevars.gulfnews.com/2022/03/23/Bhagat-Singh-_17fb5e39284_medium.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia et iusto, earum eveniet debitis
+                    recusandae odio officiis quos ipsum iste! Vel eaque consequuntur iure vero quisquam fugit, voluptate
+                    voluptatum beatae.</p>
+            </div>
+            <div class="box">
+                <img src="https://imagevars.gulfnews.com/2022/03/23/Bhagat-Singh-_17fb5e39284_medium.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia et iusto, earum eveniet debitis
+                    recusandae odio officiis quos ipsum iste! Vel eaque consequuntur iure vero quisquam fugit, voluptate
+                    voluptatum beatae.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="s1out">
+
+        </div>
+    </section>
+</body>
+
+</html>
